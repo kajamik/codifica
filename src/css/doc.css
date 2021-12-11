@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #aaa;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img {
+    max-height: 100%;
+}
+
+.manuscript > .viewer {
+    background-color: black;
+}
+
+.manuscript > .viewer > .viewer-gallery {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.manuscript > .viewer > .viewer-gallery > .item:not(.sx):not(.dx) {
+    display: none;
+}
+
+.manuscript > .viewer > .viewer-gallery > .item {
+    width: 25.9%;
+}
+
+.manuscript > .viewer > .viewer-gallery > .current {
+    padding: 2px;
+    background-color: red;
+}
+.manuscript > .viewer > .viewer-control button {
+    padding: 5px;
+    margin: 3px;
+    border: none;
+    background: rgb(62, 43, 99);
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: large;
+}
+
+.manuscript > .viewer > .viewer-control button[disabled] {
+    opacity: 0.5;
+}
+
+.manuscript .reading {
+    display: flex;
+    flex-direction: row;
+}
+.manuscript > .reading > .reading-body > .item {
+    padding: 5px;
+}
+
+.manuscript > .reading > .reading-body > .marked {
+    background-color: rgb(94, 114, 109);
+    border-radius: 7px;
+}
