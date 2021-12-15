@@ -119,9 +119,9 @@
             <div type="page" n="12">
                 <ab type="paragraph" n="ab_1" xml:id="ms_fr_03951_01_1_p012_ab1" facs="#ms_fr_03951_01_1_p012">
                     <lb n="1" facs="ms_fr_03951_01_1_p012_line_1" />
-                    du russe et du slave, comme M. <persName ref="#Baudouin_De_Courtenay" type="anthroponym">N. Baudouin 
+                    du russe et du slave, comme M. <persName ref="#BDC" type="anthroponym">N. Baudouin 
                     <lb n="2" facs="ms_fr_03951_01_1_p012_line_2" />
-                    de Courtenay</persName> <subst><del>et</del><add>,</add></subst> M. <persName ref="#Mikolaj_Kruszewski" type="anthroponym">Kruszewski</persName><subst><del><gap reason="illegible" unit="char"/></del><add>.</add></subst>
+                    de Courtenay</persName> <subst><del>et</del><add>,</add></subst> M. <persName ref="#MK" type="anthroponym">Kruszewski</persName><subst><del><gap reason="illegible" unit="char"/></del><add>.</add></subst>
                 </ab>
                 <ab type="paragraph" n="ab_2" xml:id="ms_fr_03951_01_1_p012_ab2" facs="#ms_fr_03951_01_1_p012">
                     <lb n="3" facs="ms_fr_03951_01_1_p012_line_3" />
@@ -284,9 +284,7 @@
                     data dal fatto che il nuovo corso di lingue
                     indoeuropee creato dal Dipartimento d’Istruzione
                     Pubblica è stato fatto in piena conformità di vedute
-                    con l’eminente titolare della cattedra di linguistica.
-                </ab>
-                <ab corresp="ms_fr_03951_01_1_p013_ab2">
+                    con l’eminente titolare dellref="etude_de_langage"13_ab2">
                     Più si avrà, in uno stesso centro accademico,
                     una molteplicità di specializzazioni linguistiche
                     votate allo studio di un certo gruppo di lingue, più a
@@ -311,36 +309,42 @@
                 <list type="glossary">
                     <item>
                         <gloss xml:id="point_de_vue">
+                            Point de Vue
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="etude_du_langage">
+                            La linguistica è lo studio scientifico del <hi>linguaggio</hi> verbale umano e delle sue strutture.
+                            Ha come scopo comprendere e definire le caratteristiche del linguaggio verbale umano (la facoltà mentale dell'uomo di comunicare attraverso una lingua) 
+                            attraverso l'analisi delle lingue del mondo
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="etude_des_langues">
-                            Vedi étude du langage
+                            Vedi <hi>étude du langage</hi>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="science_du_langage">
-                            Vedi étude du langage
+                            Vedi <hi>étude du langage</hi>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="langue">
-                            <persName>Saussure</persName> vuole rimarcare la complementarità di lingua e linguaggio. La sua affermazione, però, non può e non deve essere confusa con una concezione à la Chomsky,
-                            per cui il vero language è la Grammatica Universale, e lo studio delle lingue è in fondo
-                            solo questione di parametrizzazione. 
+                            La lingua è il sistema o forma storicamente determinata attraverso il quale
+                            gli appartenenti a una comunità si esprimono e comunicano tra loro attraverso l'uso di un determinato <hi>linguaggio</hi>
                         </gloss>
                     </item>
                     <item>
-                        <gloss xml:id="langage">
+                        <gloss xml:id="langage" source="">
                             
                         </gloss>
                     </item>
                     <item>
-                        <gloss xml:id="famille_de_language">
+                        <gloss xml:id="famille_de_language" source="https://it.wikipedia.org/wiki/Famiglia_linguistica">
+                            Una famiglia un'unità <hi>filogenetica</hi> ossia i cui membri sono considerati come derivanti da un antenato comune.
+                            L'antenato è molto raramente una lingua conosciuta, poiché molte lingue hanno una storia registrata molto breve.
+                            Comunque è possibile ricostruire molte delle caratteristiche dell'antenato comune a varie lingue e dialetti usando il metodo comparativo, una procedura di ricostruzione sviluppata dai linguisti a partire dal XIX secolo. Grazie a tale metodo è possibile dimostrare l'appartenenza a una determinata famiglia
                         </gloss>
                     </item>
                     <item>
@@ -349,6 +353,8 @@
                     </item>
                     <item>
                         <gloss xml:id="langues_germaniques">
+                            Le <hi>lingue germaniche</hi> sono un gruppo linguistico appartenente alla famiglia delle lingue indoeuropee.
+                            Sono originate dalla lingua proto-germanica, parlata dai popoli germanici che con diverse migrazioni erano arrivati a stanziarsi dal nord Europa ai confini dell'Impero romano, fino agli anni della sua caduta. 
                         </gloss>
                     </item>
                     <item>
@@ -357,10 +363,13 @@
                     </item>
                     <item>
                         <gloss xml:id="langues_semitiques">
+                            Le lingue semitiche sono un ramo delle lingue afro-asiatiche parlate in Africa e Asia.
+                            Le lingue semitiche sono note per la loro morfologia nonconcatenativa, cioè le radici delle parole non sono esse stesse sillabe o parole, ma insiemi isolati di consonanti, di solito tre, che formano una cosiddetta radice trilittera.
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="groupe_de_langues">
+                            Vedi famille de language
                         </gloss>
                     </item>
                     <item>
@@ -369,6 +378,7 @@
                     </item>
                     <item>
                         <gloss xml:id="linguiste">
+                            Un linguista è una persona specializzata in linguistica
                         </gloss>
                     </item>
                     <item>
@@ -376,14 +386,15 @@
                 </list>
                 <list type="person">
                     <item>
-                        <persName xml:id="Baudouin_De_Courtenay">
-                            
+                        <persName xml:id="BDC">
+                            <forename>Jan Niecisław Baudouin</forename>
+                            <surname>de Courtenay</surname>
                         </persName>
-                        <persName xml:id="Mikolaj_Kruszewski">
-
-                        </persName>
-                        <persName xml:id="Ferdinand_De_Saussure">
-                           
+                    </item>
+                    <item>
+                        <persName xml:id="MK">
+                            <forename>Mikolaj Habdank</forename>
+                            <surname>Kruszewski</surname> 
                         </persName>
                     </item>
                 </list>

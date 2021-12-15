@@ -169,32 +169,32 @@
             <xsl:value-of select="@type"/>
         </xsl:element>
 
-        <xsl:element name="ul">
+        <xsl:element name="ol">
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
-    <xsl:templates match="tei:div[@type='list']">
-        <xsl:apply-templates/>
-    </xsl:templates>
-
-    <!--<xsl:template match="">
+    <xsl:template match="tei:item">
         <xsl:element name="li">
-            <xsl:attribute name="id">
-                <xsl:value-of select="@xml:id"/>
-            </xsl:attribute>
-
-            <xsl:for-each select="current()">
-                <xsl:element name="strong">
-                    <xsl:value-of select="concat(//tei:term[@ref=concat('#', current()/@xml:id)], ':')"/>
-                </xsl:element>
-                <xsl:value-of select="current()"/>
-            </xsl:for-each>
+            <xsl:apply-templates/>
         </xsl:element>
-    </xsl:template>-->
+    </xsl:template>
 
-    <xsl:template match="tei:note">
+    <xsl:template match="tei:gloss | tei:note | tei:persName">
+        <xsl:for-each select="current()">
+            <xsl:element name="strong">
+                <xsl:value-of select="concat(//tei:term[@ref=concat('#', current()/@xml:id)]|//tei:persName[@ref=concat('#', current()/@xml:id)], ':')"/>
+            </xsl:element>
+            <xsl:value-of select="current()"/>
+        </xsl:for-each>
+    </xsl:template>
 
+
+
+    <xsl:template match="tei:hi">
+        <xsl:element name="strong">
+            <xsl:apply-templates/>
+        </xsl:element>
     </xsl:template>
 
 </xsl:stylesheet>
