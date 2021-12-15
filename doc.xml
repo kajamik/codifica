@@ -12,30 +12,35 @@
             <titleStmt>
                 <title xml:lang="fr">Trois premières conférences à l'Université</title>
                 <title xml:lang="it">Le prime tre conferenze all'Università</title>
+                <respStmt>
+                    <resp ref="">Tradotto da</resp>
+                    <name>Emanuele Fadda</name>
+                </respStmt>
             </titleStmt>
+            <editionStmt>
+                <edition>
+                    <name>Digital Edition</name>
+                    <date>Dec 2021</date>
+                </edition>
+                <respStmt>
+                    <resp ref="AMG">Project coordinated by</resp>
+                    <name>Angelo Mario del Grosso</name>
+                </respStmt>
+                <respStmt>
+                    <resp ref="#PPC">Encoded by</resp>
+                    <name>Pietro Paolo Carpentras</name>
+                </respStmt>
+            </editionStmt>
             <publicationStmt>
                 <publisher xml:lang="fr" ref=""></publisher>
                 <pubPlace></pubPlace>
-                <date></date>
+                <date when="2002"/>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <country></country>
-                        <settlement></settlement>
-                        <repository></repository>
-                        <idno></idno>
+
                     </msIdentifier>
-                    <msContents>
-                        <msItem>
-                            <title></title>
-                        </msItem>
-                    </msContents>
-                    <physDesc>
-                        <objectDesc>
-                            <supportDesc></supportDesc>
-                        </objectDesc>
-                    </physDesc>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
@@ -113,122 +118,126 @@
             <pb n="12" facs="ms_fr_03951_01_1_p012"/>
             <div type="page" n="12">
                 <ab type="paragraph" n="ab_1" xml:id="ms_fr_03951_01_1_p012_ab1" facs="#ms_fr_03951_01_1_p012">
-                    <lb facs="ms_fr_03951_01_1_p012_line_1" />
-                    du russe et du slave, comme M. <term ref="#deCourtenay">N. Baudouin</term>
-                    <lb facs="ms_fr_03951_01_1_p012_line_2" />
-                    de Courtenay <subst><del>et</del><add>,</add></subst> M. <term ref="#Kruszewski">Kruszewski</term><subst><del>,</del><add>.</add></subst> <del><gap reason="illegible" unit="char"/></del>
+                    <lb n="1" facs="ms_fr_03951_01_1_p012_line_1" />
+                    du russe et du slave, comme M. <persName ref="#Baudouin_De_Courtenay" type="anthroponym">N. Baudouin 
+                    <lb n="2" facs="ms_fr_03951_01_1_p012_line_2" />
+                    de Courtenay</persName> <subst><del>et</del><add>,</add></subst> M. <persName ref="#Mikolaj_Kruszewski" type="anthroponym">Kruszewski</persName><subst><del><gap reason="illegible" unit="char"/></del><add>.</add></subst>
                 </ab>
                 <ab type="paragraph" n="ab_2" xml:id="ms_fr_03951_01_1_p012_ab2" facs="#ms_fr_03951_01_1_p012">
-                    <lb facs="ms_fr_03951_01_1_p012_line_3" />
-                    Le <term ref="#point_de_vue">point de vue</term> auquel nous sommes arrivés,
-                    <lb facs="ms_fr_03951_01_1_p012_line_4" />
-                    Messieurs, et qui est simplement le <term ref="#point_de_vue">point de vue</term>
-                    <lb facs="ms_fr_03951_01_1_p012_line_5" />
-                    <del><gap reason="illegible" unit="char"/></del> dont s’inspire <add place="above">sans exception</add> l’<term ref="#etude_de_langage">étude des langues</term>, en toutes
-                    <lb facs="ms_fr_03951_01_1_p012_line_6" />
+                    <lb n="3" facs="ms_fr_03951_01_1_p012_line_3" />
+                    Le <term ref="#point_de_vue" type="terminology">point de vue</term> auquel nous sommes arrivés,
+                    <lb n="4" facs="ms_fr_03951_01_1_p012_line_4" />
+                    Messieurs, et qui est simplement le <term ref="#point_de_vue" type="terminology">point de vue</term>
+                    <lb n="5" facs="ms_fr_03951_01_1_p012_line_5" />
+                    <del><gap reason="illegible" unit="char"/></del> dont s’inspire <add place="above">sans exception</add> l’<term ref="#etude_des_langues" type="terminology">étude des langues</term>, en toutes
+                    <lb n="6" facs="ms_fr_03951_01_1_p012_line_6" />
                     ses branches, fait voir très clairement qu’il n’y a
-                    <lb facs="ms_fr_03951_01_1_p012_line_7" />
-                    pas de séparation entre l’<term ref="#etude_de_langage">étude du langage</term>
-                    <lb facs="ms_fr_03951_01_1_p012_line_8" />
-                    et l’<term ref="#etude_de_langage">étude <del><gap reason="illegible" unit="char"/></del> des langues</term>, <del><gap reason="illegible" unit="char"/></del>
-                    <lb facs="ms_fr_03951_01_1_p012_line_9" />
-                    <subst><del>telle famille,</del><add place="margin">ou l’étude de telle ou telle <term ref="#langue">langue</term> ou <term ref="#famille_de_language">famille de langues</term></add></subst>mais que d’un autre côté chaque
-                    <lb facs="ms_fr_03951_01_1_p012_line_10" />
-                    <del><gap reason="illegible" extent="2" unit="char"/></del>division et subdivision de <term ref="#langue">langue</term> représente un
-                    <lb facs="ms_fr_03951_01_1_p012_line_11" />
+                    <lb n="7" facs="ms_fr_03951_01_1_p012_line_7" />
+                    pas de séparation entre l’<term ref="#etude_du_langage" type="terminology">étude du langage</term>
+                    <lb n="8" facs="ms_fr_03951_01_1_p012_line_8" />
+                    et l’<term ref="#etude_des_langues" type="terminology">étude <del><gap reason="illegible" unit="char"/></del> des langues</term>, <del><gap reason="illegible" unit="char"/></del>
+                    <lb n="9" facs="ms_fr_03951_01_1_p012_line_9" />
+                    <subst><del>telle famille,</del> <add place="margin">ou l’étude de telle ou telle <term ref="#langue" type="terminology">langue</term> ou <term ref="#famille_de_language" type="terminology">famille de langues</term></add> </subst>mais que d’un autre côté chaque
+                    <lb n="10" facs="ms_fr_03951_01_1_p012_line_10" />
+                    <del><gap reason="illegible" extent="2" unit="char"/></del>division et subdivision de <term ref="#langue" type="terminology">langue</term> représente un
+                    <lb n="11" facs="ms_fr_03951_01_1_p012_line_11" />
                     document nouveau, et intéressant au même
-                    <lb facs="ms_fr_03951_01_1_p012_line_12" />
-                    titre que tout autre, pour le fait universel du <term ref="#langue">lan<lb facs="ms_fr_03951_01_1_p012_line_13" />gage</term>.
+                    <lb n="12" facs="ms_fr_03951_01_1_p012_line_12" />
+                    titre que tout autre, pour le fait universel du <term ref="#langage" type="terminology">lan
+                    <lb n="13" facs="ms_fr_03951_01_1_p012_line_13" />
+                    gage</term>.
                 </ab>
                 <ab type="paragraph" n="ab_3" xml:id="ms_fr_03951_01_1_p012_ab3" facs="#ms_fr_03951_01_1_p012">
-                    L’<term ref="#Université_de_Genève">Université de Genève</term> a tenu dès <del><gap reason="illegible" unit="char"/></del>
-                    <lb facs="ms_fr_03951_01_1_p012_line_14" />
+                    L’<orgName ref="#Universite_de_Geneve" type="institution">Université de Genève</orgName> a tenu dès <del><gap reason="illegible" unit="char"/></del>
+                    <lb n="14" facs="ms_fr_03951_01_1_p012_line_14" />
                     <del><gap reason="illegible" unit="char"/></del> le premier jour, et à <subst><del><gap reason="illegible"/></del><add place="above">bon droit</add></subst>, à donner
-                    <lb facs="ms_fr_03951_01_1_p012_line_15" />
-                    une place à la <term ref="#etude_de_langage">science du langage</term> ; elle l’a fait
-                    <lb facs="ms_fr_03951_01_1_p012_line_16" />
-                    en créant le <term ref="#cours_de_linguistique">cours de Linguistique</term> <del><gap reason="illegible" unit="char"/></del>
-                    <lb facs="ms_fr_03951_01_1_p012_line_17" />
+                    <lb n="15" facs="ms_fr_03951_01_1_p012_line_15" />
+                    une place à la <term ref="#science_du_langage" type="terminology">science du langage</term>; elle l’a fait
+                    <lb n="16" facs="ms_fr_03951_01_1_p012_line_16" />
+                    en créant le <orgName ref="#cours_de_linguistique" type="institution">cours de Linguistique</orgName> <del><gap reason="illegible" unit="char"/></del>
+                    <lb n="17" facs="ms_fr_03951_01_1_p012_line_17" />
                     <del><gap reason="illegible" unit="char"/></del> et a résumé ainsi sous un nom
-                    <lb facs="ms_fr_03951_01_1_p012_line_18" />
+                    <lb n="18" facs="ms_fr_03951_01_1_p012_line_18" />
                     très juste l’ensemble des études relatives au
-                    <lb facs="ms_fr_03951_01_1_p012_line_19" />
-                    <term ref="#parler_humain">parler humain</term>.
+                    <lb n="19" facs="ms_fr_03951_01_1_p012_line_19" />
+                    <term ref="#parler_humain" type="terminology">parler humain</term>.
                 </ab>
-                <ab >
+                <ab type="paragraph" n="ab_4" xml:id="ms_fr_03951_01_1_p012_ab4" facs="#ms_fr_03951_01_1_p012">
                     Il est presque inutile de dire
-                    <lb facs="ms_fr_03951_01_1_p012_line_20" />
-                    que cet enseignement, <term ref="">donné depuis quinze ans</term>, avec
-                    <lb facs="ms_fr_03951_01_1_p012_line_21" />
+                    <lb n="20" facs="ms_fr_03951_01_1_p012_line_20" />
+                    que cet enseignement, <term ref="#Depuis_quize_ans" type="event">donné depuis quinze ans</term>, avec
+                    <lb n="21" facs="ms_fr_03951_01_1_p012_line_21" />
                     une érudition, une expérience <del rend="overtyped"><gap reason="illegible" unit="char"/></del><del rend="overstrike" type="primary"><gap reason="illegible" unit="char"/></del>
-                    <lb facs="ms_fr_03951_01_1_p012_line_22" />
+                    <lb n="22" facs="ms_fr_03951_01_1_p012_line_22" />
                     <del><gap reason="illegible" unit="char"/></del> que vous ne vous attendez
-                    <lb facs="ms_fr_03951_01_1_p012_line_23" />
+                    <lb n="23" facs="ms_fr_03951_01_1_p012_line_23" />
                     pas un seul instant à retrouver dans ces conférences, –
-                    <lb facs="ms_fr_03951_01_1_p012_line_24" />
+                    <lb n="24" facs="ms_fr_03951_01_1_p012_line_24" />
                     que cet enseignement n’a jamais <del><gap reason="illegible" unit="char"/></del>
-                    <lb facs="ms_fr_03951_01_1_p012_line_25" />
+                    <lb n="25" facs="ms_fr_03951_01_1_p012_line_25" />
                     <subst><del><gap reason="illegible"/></del><add>rien</add></subst> eu dans son programme <subst><del><gap reason="illegible" unit="char"/></del><add>qui pût exclure</add></subst> tel corps d’études
-                    <lb facs="ms_fr_03951_01_1_p012_line_26" />
-                    <damage><supplied reason="illegible">particulier</supplied></damage> comme celui qui se rapporte aux <damage><supplied reason="illegible"><term ref="">langues</term></supplied></damage>
+                    <lb n="26" facs="ms_fr_03951_01_1_p012_line_26" />
+                    <damage><supplied reason="illegible">particulier</supplied></damage> comme celui qui se rapporte aux <damage><supplied reason="illegible"><term ref="langues">langues</term></supplied></damage>
                 </ab>
             </div>
             <pb n="13" facs="ms_fr_03951_01_1_p013"/>
             <div type="page" n="13">
-                <ab type="paragraph" n="ab_4" xml:id="ms_fr_03951_01_1_p012_ab4" facs="#ms_fr_03951_01_1_p012">
-                    <lb facs="ms_fr_03951_01_1_p013_line_1" />
-                    romanes, sou aux <term ref="#langues_germaniques">langues germaniques</term>, ou aux
-                    <lb facs="ms_fr_03951_01_1_p013_line_2" />
-                    <term ref="#langues_indoeuropéennes">langues indo-européennes</term>, ou aux <term ref="#langues_sémitiques">langues sémitiques</term>, etc.
+                <ab type="paragraph" n="ab_4" xml:id="ms_fr_03951_01_1_p012_ab5" facs="#ms_fr_03951_01_1_p012">
+                    <lb n="1" facs="ms_fr_03951_01_1_p013_line_1" />
+                    romanes, sou aux <term ref="#langues_germaniques" type="terminology">langues germaniques</term>, ou aux
+                    <lb n="2" facs="ms_fr_03951_01_1_p013_line_2" />
+                    <term ref="#langues_indoeuropeennes" type="terminology">langues indo-européennes</term>, ou aux <term ref="#langues_semitiques" type="terminology">langues sémitiques</term>, etc.
                 </ab>
                 <ab type="paragraph" n="ab_5" xml:id="ms_fr_03951_01_1_p013_ab1" facs="#ms_fr_03951_01_1_p013">
-                    <lb facs="ms_fr_03951_01_1_p013_line_3" />
+                    <lb n="3" facs="ms_fr_03951_01_1_p013_line_3" />
                     Au contraire, il appelle autour de lui ces études
-                    <lb facs="ms_fr_03951_01_1_p013_line_4" />
+                    <lb n="4" facs="ms_fr_03951_01_1_p013_line_4" />
                     particulières, et le témoignage le plus autorisé,
-                    <lb facs="ms_fr_03951_01_1_p013_line_5" />
+                    <lb n="5" facs="ms_fr_03951_01_1_p013_line_5" />
                     en même temps que le plus agréable que j’en
-                    <lb facs="ms_fr_03951_01_1_p013_line_6" />
-                    puisse apporter, c’est que le nouveau <term ref="#cours_de_languages_indoeuropéennes">cours de <lb facs="ms_fr_03951_01_1_p013_line_7" />langues indo-européennes</term>
-                    <lb facs="ms_fr_03951_01_1_p013_line_7" />
-                    créé par le <term ref="#">Département <lb facs="ms_fr_03951_01_1_p013_line_8" /> de l’Instruction Publique</term>
-                    <lb facs="ms_fr_03951_01_1_p013_line_8" />
-                    l’a été en pleine conformité
-                    <lb facs="ms_fr_03951_01_1_p013_line_9" />
-                    de vues avec <term ref="#">l’éminent titulaire de <lb facs="ms_fr_03951_01_1_p013_line_10" />la chaire de linguistique.</term>
+                    <lb n="6" facs="ms_fr_03951_01_1_p013_line_6" />
+                    puisse apporter, c’est que le nouveau <orgName ref="#cours_de_languages_indoeuropennes" type="institution">cours de
+                    <lb n="7" facs="ms_fr_03951_01_1_p013_line_7" />
+                    langues indo-européennes</orgName> créé par le <orgName ref="#Departement_de_instruction_publique" type="institution">Département 
+                    <lb n="8" facs="ms_fr_03951_01_1_p013_line_8" />
+                    de l’Instruction Publique</orgName> l’a été en pleine conformité
+                    <lb n="9" facs="ms_fr_03951_01_1_p013_line_9" />
+                    de vues avec <roleName ref="#titulaire_de_la_chaire_de_linguistique" type="anthroponym">l’éminent titulaire de
+                    <lb n="10" facs="ms_fr_03951_01_1_p013_line_10" />
+                    la chaire de linguistique.</roleName>
                 </ab>
                 <ab type="paragraph" n="ab_6" xml:id="ms_fr_03951_01_1_p013_ab2" facs="#ms_fr_03951_01_1_p013">
-                    <lb facs="ms_fr_03951_01_1_p013_line_11" />
+                    <lb n="11" facs="ms_fr_03951_01_1_p013_line_11" />
                     Plus on aura dans un même centre <add place="right">académique</add> de
-                    <lb facs="ms_fr_03951_01_1_p013_line_12" />
+                    <lb n="12" facs="ms_fr_03951_01_1_p013_line_12" />
                     <del>spécialités vouées à</del> spécialités linguistiques
-                    <lb facs="ms_fr_03951_01_1_p013_line_13" />
-                    vouées à l’étude <subst><del><gap reason="illegible" unit="char"/></del><add place="above">d’un certain</add></subst> <term ref="#">groupe de langues</term>,
-                    <lb facs="ms_fr_03951_01_1_p013_line_14" />
+                    <lb n="13" facs="ms_fr_03951_01_1_p013_line_13" />
+                    vouées à l’étude <subst><del><gap reason="illegible" unit="char"/></del><add place="above">d’un certain</add></subst> <term ref="#groupe_de_langues" type="terminology">groupe de langues</term>,
+                    <lb n="14" facs="ms_fr_03951_01_1_p013_line_14" />
                     plus aussi l’ensemble de ces
-                    <lb facs="ms_fr_03951_01_1_p013_line_15" />
+                    <lb n="15" facs="ms_fr_03951_01_1_p013_line_15" />
                     études prendront de consistance par leur appui mutuel, et plus on
-                    <lb facs="ms_fr_03951_01_1_p013_line_16" />
-                    apercevra <term ref="#">les traits généraux</term> de la discipline,
-                    <lb facs="ms_fr_03951_01_1_p013_line_17" />
+                    <lb n="16" facs="ms_fr_03951_01_1_p013_line_16" />
+                    apercevra <term ref="#trait_generaux" type="terminology">les traits généraux</term> de la discipline,
+                    <lb n="17" facs="ms_fr_03951_01_1_p013_line_17" />
                     qui sont comme brisés et morcelés là où cessent
-                    <lb facs="ms_fr_03951_01_1_p013_line_18" />
+                    <lb n="18" facs="ms_fr_03951_01_1_p013_line_18" />
                     tout à coup l’information, <del><gap reason="illegible" unit="char"/></del> l’intérêt, et la vie
-                    <lb facs="ms_fr_03951_01_1_p013_line_19" />
+                    <lb n="19" facs="ms_fr_03951_01_1_p013_line_19" />
                     par l’absence de disciples ou de maîtres. <del><gap reason="illegible" unit="char"/></del>
                 </ab>
                 <ab type="paragraph" n="ab_7" xml:id="ms_fr_03951_01_1_p013_ab3" facs="#ms_fr_03951_01_1_p013">
-                    <lb facs="ms_fr_03951_01_1_p013_line_20" />
-                    <del><gap reason="illegible" unit="char"/></del> Comme <term ref="#">linguiste</term>, on
-                    <lb facs="ms_fr_03951_01_1_p013_line_21" />
+                    <lb n="20" facs="ms_fr_03951_01_1_p013_line_20" />
+                    <del><gap reason="illegible" unit="char"/></del> Comme <term ref="#linguiste" type="terminology">linguiste</term>, on
+                    <lb n="21" facs="ms_fr_03951_01_1_p013_line_21" />
                     sera certainement porté à souhaiter le développe
-                    <lb facs="ms_fr_03951_01_1_p013_line_22" />
+                    <lb n="22" facs="ms_fr_03951_01_1_p013_line_22" />
                     ment indéfini des chaires de linguistique
-                    <lb facs="ms_fr_03951_01_1_p013_line_23" />
+                    <lb n="23" facs="ms_fr_03951_01_1_p013_line_23" />
                     <subst><del><gap reason="illegible"/></del><add place="above">(j’avoue toutefois que ce développement</add></subst> indéfini
-                    <lb facs="ms_fr_03951_01_1_p013_line_24" />
+                    <lb n="24" facs="ms_fr_03951_01_1_p013_line_24" />
                     <del><gap reason="illegible"/></del> pourrait <del><gap reason="illegible"/></del>avoir des inconvénients
-                    <lb facs="ms_fr_03951_01_1_p013_line_25" />
+                    <lb n="25" facs="ms_fr_03951_01_1_p013_line_25" />
                     inquiétants à la longue pour tout le monde).
                 </ab>
             </div>
@@ -301,6 +310,24 @@
             <div type="list">
                 <list type="glossary">
                     <item>
+                        <gloss xml:id="point_de_vue">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="etude_du_langage">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="etude_des_langues">
+                            Vedi étude du langage
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="science_du_langage">
+                            Vedi étude du langage
+                        </gloss>
+                    </item>
+                    <item>
                         <gloss xml:id="langue">
                             <persName>Saussure</persName> vuole rimarcare la complementarità di lingua e linguaggio. La sua affermazione, però, non può e non deve essere confusa con una concezione à la Chomsky,
                             per cui il vero language è la Grammatica Universale, e lo studio delle lingue è in fondo
@@ -308,16 +335,56 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss xml:id="linguistique">
-
+                        <gloss xml:id="langage">
+                            
                         </gloss>
                     </item>
-                </list>
-                <list type="note">
                     <item>
-                        <note>
-                            Prova nota
-                        </note>
+                        <gloss xml:id="famille_de_language">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="parler_humain">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="langues_germaniques">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="langues_indoeuropeennes">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="langues_semitiques">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="groupe_de_langues">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="trait_generaux">
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="linguiste">
+                        </gloss>
+                    </item>
+                    <item>
+                    </item>
+                </list>
+                <list type="person">
+                    <item>
+                        <persName xml:id="Baudouin_De_Courtenay">
+                            
+                        </persName>
+                        <persName xml:id="Mikolaj_Kruszewski">
+
+                        </persName>
+                        <persName xml:id="Ferdinand_De_Saussure">
+                           
+                        </persName>
                     </item>
                 </list>
             </div>

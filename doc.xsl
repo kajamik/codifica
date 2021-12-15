@@ -93,19 +93,6 @@
         </xsl:element>
     </xsl:template>
 
-
-    <xsl:template match="tei:lb">
-        <xsl:if test="position() > 2">
-            <xsl:element name="br"/>
-        </xsl:if>
-    </xsl:template>
-
-    <!--<xsl:template match="tei">
-        <xsl:element name="span">
-            <xsl:value-of select="current()"/>
-        </xsl:element>
-    </xsl:template>-->
-
     <xsl:template match="tei:subst">
         <xsl:apply-templates/>
     </xsl:template>
@@ -136,13 +123,13 @@
                 <xsl:element name="sup">
                     <xsl:attribute name="data-type">add</xsl:attribute>
                     <xsl:attribute name="data-place">above</xsl:attribute>
-                    <xsl:value-of select="current()"/>
+                    <xsl:apply-templates/>
                 </xsl:element>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:element name="ins">
                     <xsl:attribute name="data-type">add</xsl:attribute>
-                    <xsl:value-of select="current()"/>
+                    <xsl:apply-templates/>
                 </xsl:element>
             </xsl:otherwise>
         </xsl:choose>
@@ -153,8 +140,15 @@
             <xsl:attribute name="href">
                 <xsl:value-of select="@ref"/>
             </xsl:attribute>
-            <xsl:value-of select="current()"/>
+            <xsl:apply-templates/>
         </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:lb">
+        <xsl:element name="br">
+            <xsl:attribute name="id"><xsl:value-of select="@facs"/></xsl:attribute>
+        </xsl:element>
+        <xsl:value-of select="concat('[', @n, ']')"/>
     </xsl:template>
 
     <!-- Translation -->
@@ -176,23 +170,28 @@
         </xsl:element>
 
         <xsl:element name="ul">
-
-            <xsl:for-each select="current()/tei:item">
-                <xsl:element name="li">
-                    <xsl:attribute name="id">
-                        <xsl:value-of select="current()/*[1]/@xml:id"/>
-                    </xsl:attribute>
-                    <xsl:value-of select="//tei:body//tei:term[@ref='#/@xml:id']"/>: <xsl:value-of select="current()"/>
-                    <xsl:element name="br"/>
-                </xsl:element>
-            </xsl:for-each>
-
+            <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="tei:gloss">
+    <xsl:templates match="tei:div[@type='list']">
+        <xsl:apply-templates/>
+    </xsl:templates>
 
-    </xsl:template>
+    <!--<xsl:template match="">
+        <xsl:element name="li">
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+
+            <xsl:for-each select="current()">
+                <xsl:element name="strong">
+                    <xsl:value-of select="concat(//tei:term[@ref=concat('#', current()/@xml:id)], ':')"/>
+                </xsl:element>
+                <xsl:value-of select="current()"/>
+            </xsl:for-each>
+        </xsl:element>
+    </xsl:template>-->
 
     <xsl:template match="tei:note">
 

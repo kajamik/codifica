@@ -4,12 +4,12 @@
     // coords = ulx, uly, lrx, lry
     var currentPage;
     var items = document.querySelectorAll(".viewer > .viewer-gallery > .item");
-    var terms = {};
+    var term = [];
     var modules = [];
     
     goPage(1);
-    //hightlightRow("#ms_fr_03951_01_1_p012_ab2");
-    //resetAllHightlight();
+    //highlightRow("#ms_fr_03951_01_1_p012_ab2");
+    //resetAllHightligh();
     
     document.getElementById("next").onclick = function() {
       goPage(currentPage + 1);
@@ -18,6 +18,10 @@
     document.getElementById("prev").onclick = function() {
       goPage(currentPage - 1);
     };
+
+    /**
+     * Book
+     */
 
     function goPage(page) {
       var _dx, _sx, currentIndex = -1, dx, sx, markText;
@@ -61,9 +65,29 @@
         items[currentIndex].querySelectorAll('area').forEach((area) => {
           area.onclick = () => {
             var row = area.getAttribute("data-row");
-            resetAllHightlight();
-            alert(row);
-            hightlightRow(row);
+            resetAllHightligh();
+            var start = document.querySelector("br"+row);
+            visitSiblings(start);
+            function visitSiblings(node) {
+              while(node.nextSibling) {
+                var curr = node.nextSibling;
+                alert(curr.nodeName);
+                if(curr.nodeName == start.nodeName) {
+                  alert("trovato");
+                }
+                if(curr.nodeType == Node.ELEMENT_NODE) {
+                  var first = curr.firstChild;
+                  while(first) {
+                    if(curr.firstChild.nodeName == start.nodeName) {
+                      alert("trovato");
+                    }
+                    visitSiblings();
+                  }
+                }
+                node = curr;
+              }
+            }
+            //highlightRow(row);
           }
         });
 
@@ -75,9 +99,11 @@
       }
     }
 
-    function hightlightRow(row, color) {
-      var element = document.querySelector(row);
-      if(text = document.querySelector(row)) {
+    /**
+     * Highlight
+     */
+    function highlightRow(node, color = '') {
+      if(node) {
         var newElement = element.cloneNode();
         var mark = document.createElement("mark");
         var newText = document.createTextNode(element.textContent);
@@ -87,7 +113,7 @@
       }
     }
 
-    function resetAllHightlight() {
+    function resetAllHightligh() {
       var marks = document.querySelectorAll("mark");
       marks.forEach((item) => {
         item.parentNode.textContent = item.textContent;

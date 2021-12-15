@@ -5,6 +5,7 @@
 
 body {
     background-color: #aaa;
+    font-size: 19px;
 }
 
 ul {
@@ -16,6 +17,9 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
+sup {
+    font-size: 22px;
+}
 img {
     max-height: 100%;
 }

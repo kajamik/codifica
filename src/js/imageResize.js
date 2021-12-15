@@ -24,6 +24,6 @@ export class ImageMap
             }
             this.coords[i].coords = this.coords[i].join(',');
             this.areas[i].coords = this.coords[i].coords;
-        }ì
+        }
     }
 }
