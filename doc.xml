@@ -13,8 +13,8 @@
                 <title xml:lang="fr">Trois premières conférences à l'Université</title>
                 <title xml:lang="it">Le prime tre conferenze all'Università</title>
                 <respStmt>
-                    <resp ref="">Tradotto da</resp>
-                    <name>Emanuele Fadda</name>
+                    <resp>Tradotto da</resp>
+                    <name ref="#EF">Emanuele Fadda</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -23,12 +23,12 @@
                     <date>Dec 2021</date>
                 </edition>
                 <respStmt>
-                    <resp ref="AMG">Project coordinated by</resp>
-                    <name>Angelo Mario del Grosso</name>
+                    <resp>Project coordinated by</resp>
+                    <name ref="#AMG">Angelo Mario del Grosso</name>
                 </respStmt>
                 <respStmt>
-                    <resp ref="#PPC">Encoded by</resp>
-                    <name>Pietro Paolo Carpentras</name>
+                    <resp>Encoded by</resp>
+                    <name ref="#PPC">Pietro Paolo Carpentras</name>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
@@ -119,9 +119,9 @@
             <div type="page" n="12">
                 <ab type="paragraph" n="ab_1" xml:id="ms_fr_03951_01_1_p012_ab1" facs="#ms_fr_03951_01_1_p012">
                     <lb n="1" facs="ms_fr_03951_01_1_p012_line_1" />
-                    du russe et du slave, comme M. <persName ref="#BDC" type="anthroponym">N. Baudouin 
+                    du russe et du slave, comme M. <name ref="#BDC" type="anthroponym">N. Baudouin 
                     <lb n="2" facs="ms_fr_03951_01_1_p012_line_2" />
-                    de Courtenay</persName> <subst><del>et</del><add>,</add></subst> M. <persName ref="#MK" type="anthroponym">Kruszewski</persName><subst><del><gap reason="illegible" unit="char"/></del><add>.</add></subst>
+                    de Courtenay</name> <subst><del>et</del><add>,</add></subst> M. <name ref="#MK" type="anthroponym">Kruszewski</name><subst><del><gap reason="illegible" unit="char"/></del><add>.</add></subst>
                 </ab>
                 <ab type="paragraph" n="ab_2" xml:id="ms_fr_03951_01_1_p012_ab2" facs="#ms_fr_03951_01_1_p012">
                     <lb n="3" facs="ms_fr_03951_01_1_p012_line_3" />
@@ -395,6 +395,24 @@
                         <persName xml:id="MK">
                             <forename>Mikolaj Habdank</forename>
                             <surname>Kruszewski</surname> 
+                        </persName>
+                    </item>
+                    <item>
+                        <persName xml:id="EF">
+                            <forename>Emanuele</forename>
+                            <surname>Fadda</surname> 
+                        </persName>
+                    </item>
+                    <item>
+                        <persName xml:id="PPC">
+                            <forename>Pietro Paolo</forename>
+                            <surname>Carpentras</surname> 
+                        </persName>
+                    </item>
+                    <item>
+                        <persName xml:id="AMG">
+                            <forename>Angelo Mario</forename>
+                            <surname>del Grosso</surname> 
                         </persName>
                     </item>
                 </list>

@@ -136,7 +136,7 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="tei:term">
+    <xsl:template match="tei:term[@ref!='']|tei:name[@ref!='']">
         <xsl:element name="a">
             <xsl:attribute name="href">
                 <xsl:value-of select="@ref"/>
@@ -176,18 +176,17 @@
     </xsl:template>
 
     <xsl:template match="tei:item">
-        <xsl:element name="li">
-            <xsl:apply-templates/>
-        </xsl:element>
+        <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="tei:gloss | tei:note | tei:persName">
-        <xsl:for-each select="current()">
+        <xsl:element name="li">
+            <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
             <xsl:element name="strong">
-                <xsl:value-of select="//tei:term[@ref=concat('#', current()/@xml:id)]|//tei:persName[@ref=concat('#', current()/@xml:id)]"/>:
+                <xsl:value-of select="//tei:term[@ref=concat('#', current()/@xml:id)]|//tei:name[@ref=concat('#', current()/@xml:id)]"/>:
             </xsl:element>
             <xsl:value-of select="current()"/>
-        </xsl:for-each>
+        </xsl:element>
     </xsl:template>
 
 
