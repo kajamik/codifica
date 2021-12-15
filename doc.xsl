@@ -17,6 +17,8 @@
             </head>
             <body>
                 <div class="manuscript">
+                    <h2>Document Specifications</h2>
+                    <xsl:apply-templates select="//tei:teiHeader"/>
                     <div class="viewer">
                         <div class="viewer-gallery">
                             <xsl:apply-templates select="//tei:facsimile"/>
@@ -40,7 +42,6 @@
     </xsl:template>
 
     <!-- Header, file description -->
-
     <!-- Image Maps -->
 
     <xsl:template match="tei:facsimile">
@@ -183,7 +184,7 @@
     <xsl:template match="tei:gloss | tei:note | tei:persName">
         <xsl:for-each select="current()">
             <xsl:element name="strong">
-                <xsl:value-of select="concat(//tei:term[@ref=concat('#', current()/@xml:id)]|//tei:persName[@ref=concat('#', current()/@xml:id)], ':')"/>
+                <xsl:value-of select="//tei:term[@ref=concat('#', current()/@xml:id)]|//tei:persName[@ref=concat('#', current()/@xml:id)]"/>:
             </xsl:element>
             <xsl:value-of select="current()"/>
         </xsl:for-each>
