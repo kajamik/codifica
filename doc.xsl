@@ -51,15 +51,15 @@
 
     <xsl:template match="tei:titleStmt">
         <xsl:element name="div">
-            Titolo: <xsl:value-of select="current()/tei:title[@xml:lang='fr']"/>
+            Titolo: <xsl:value-of select="current()/tei:title[@xml:lang='it']"/>
+        </xsl:element>
+        <xsl:element name="div">
+            Titolo originale: <xsl:value-of select="current()/tei:title[@xml:lang='fr']"/>
         </xsl:element>
         <xsl:apply-templates select="tei:respStmt"/>
     </xsl:template>
   
     <xsl:template match="tei:respStmt">
-        <xsl:element name="div">
-            Titolo originale: <xsl:value-of select="parent::node()/tei:title[@xml:lang='fr']"/>
-        </xsl:element>
         <xsl:element name="div">
             <xsl:apply-templates/>
         </xsl:element>
@@ -76,6 +76,10 @@
     </xsl:template>
 
     <xsl:template match="tei:publicationStmt">
+        <xsl:apply-templates/>
+    </xsl:template>
+
+    <xsl:template match="tei:sourceStmt">
         <xsl:apply-templates/>
     </xsl:template>
 
@@ -243,7 +247,7 @@
     
     <xsl:template match="tei:gloss | tei:note">
         <xsl:element name="li">
-            <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
+            <xsl:attribute name="id"><xsl:value-of select="substring(@target, 2)"/></xsl:attribute>
             <xsl:element name="span">
                 <xsl:element name="strong">
                     <xsl:value-of select="//tei:term[@target=current()/@target]"/>:

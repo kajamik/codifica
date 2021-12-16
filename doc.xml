@@ -365,7 +365,7 @@
                     </label>
                     <item>
                         <gloss target="#pdv">
-                            Point de Vue
+                            
                         </gloss>
                     </item>
                     <label>
@@ -386,7 +386,8 @@
                     <item>
                         <gloss target="#lne">
                             La <hi>lingua</hi> è il sistema o forma storicamente determinata attraverso il quale
-                            gli appartenenti a una comunità si esprimono e comunicano tra loro attraverso l'uso di un determinato linguaggio
+                            gli appartenenti a una comunità si esprimono e comunicano tra loro attraverso l'uso di un determinato linguaggio.
+                            Per <name ref="#fds" type="person">F. de Saussure</name> la langue è l’insieme delle convenzioni adottate dai membri di una comunità per comunicare tra loro. La l. costituisce l’aspetto sociale e oggettivo del linguaggio, in contrapposizione a parole, che rappresenta invece l’aspetto individuale e soggettivo.
                         </gloss>
                     </item>
                     <label>
@@ -425,6 +426,7 @@
                     </label>
                     <item>
                         <gloss target="#lnei">
+                            Le <hi>lingue indoeuropee</hi> fanno parte 
                         </gloss>
                     </item>
                     <label>
