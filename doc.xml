@@ -529,12 +529,18 @@
                 <listOrg>
                     <org>
                         <orgName xml:id="udg">
-                            <placeName>Università di Ginevra</placeName>
+                            <name>Università di Ginevra</name>
+                            <placeName>Ginevra</placeName>
+                            <country>Svizzera</country>
+                            <date when="1559">1559</date>
                         </orgName>
                     </org>
                     <org>
                         <orgName xml:id="cdl">
-                            <placeName>Corso di Linguistica</placeName>
+                            <name>Corso di Linguistica</name>
+                            <placeName>Ginevra</placeName>
+                            <country>Svizzera</country>
+                            <date>1906-1911</date>
                         </orgName>
                     </org>
                 </listOrg>

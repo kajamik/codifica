@@ -173,7 +173,7 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="tei:*[@ref!='']">
+    <xsl:template match="tei:teiHeader//*[@ref!='']|tei:body//*[@ref!='']">
         <xsl:element name="a">
             <xsl:attribute name="href">
                 <xsl:value-of select="@ref"/>
@@ -203,36 +203,44 @@
 
     <!-- Back -->
 
+    <xsl:template match="tei:back">
+        <xsl:apply-templates/>
+    </xsl:template>
+
+    <xsl:template match="tei:div[@type='list']">
+        <xsl:apply-templates/>
+    </xsl:template>
+
     <xsl:template match="tei:list">
         <xsl:element name="h2">
             Glossario
         </xsl:element>
 
         <xsl:element name="ol">
-            <xsl:apply-templates select="//tei:gloss"/>
+            <xsl:apply-templates select="current()//tei:gloss"/>
         </xsl:element>
+    </xsl:template>
 
+    <xsl:template match="tei:listPerson">
         <xsl:element name="h2">
             Persone
         </xsl:element>
 
         <xsl:element name="ol">
-            <xsl:apply-templates select="//tei:persName"/>
+            <xsl:apply-templates select="current()//tei:persName"/>
         </xsl:element>
+    </xsl:template>
 
+    <xsl:template match="tei:listOrg">
         <xsl:element name="h2">
             Istituzioni
         </xsl:element>
 
         <xsl:element name="ol">
-            <xsl:apply-templates select="//tei:orgName"/>
+            <xsl:apply-templates select="current()//tei:orgName"/>
         </xsl:element>
     </xsl:template>
-
-    <xsl:template match="tei:item">
-        <xsl:apply-templates/>
-    </xsl:template>
-
+    
     <xsl:template match="tei:gloss | tei:note">
         <xsl:element name="li">
             <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
@@ -262,6 +270,19 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
+
+    <xsl:template match="tei:orgName">
+        <xsl:element name="li">
+            <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
+            <xsl:element name="span">
+                <xsl:element name="strong">
+                    <xsl:value-of select="current()/tei:name"/>:
+                </xsl:element>
+                Nascita <xsl:apply-templates select="tei:date"/>
+                a <xsl:value-of select="current()/tei:placeName"/>, <xsl:value-of select="current()/tei:country"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
     
     <xsl:template match="tei:birth">
         <xsl:element name="span">
@@ -274,7 +295,6 @@
             <xsl:value-of select="current()/tei:placeName"/>, <xsl:value-of select="current()/tei:country"/> il <xsl:value-of select="current()/tei:date"/>
         </xsl:element>
     </xsl:template>
-
 
 
     <xsl:template match="tei:hi">
