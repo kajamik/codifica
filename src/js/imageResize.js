@@ -1,17 +1,17 @@
-export class ImageMap
+class ImageMap
 {
     arr = null;
     map = null;
-    coords = [];
+    initialCoords = [];
+    newCoords = [];
 
-    constructor(map)
-    {
+    constructor(map) {
         this.map = map;
         this.areas = map.querySelectorAll('area');
-        this.oldWidth = 4036;
 
         for(var i = 0; i < this.areas.length; i++) {
-            this.coords[i] = this.areas[i].coords.split(',');
+            this.initialCoords[i] = this.areas[i].coords.split(',');
+            this.newCoords[i] = this.areas[i].coords.split(',');
         }
     }
 
@@ -19,11 +19,12 @@ export class ImageMap
     {
         var x = this.map.parentNode.querySelector('img').clientWidth / this.map.parentNode.querySelector('img').naturalWidth;
         for(var i = 0; i < this.areas.length; i++) {
-            for(var j = 0; j < this.coords[i].length; j++) {
-                this.coords[i][j] *= x;
+            for(var j = 0; j < this.newCoords[i].length; j++) {
+                this.newCoords[i][j] *= x;
             }
-            this.coords[i].coords = this.coords[i].join(',');
-            this.areas[i].coords = this.coords[i].coords;
+            this.newCoords[i].coords = this.newCoords[i].join(',');
+            this.areas[i].coords = this.newCoords[i].coords;
+            this.newCoords[i] = this.initialCoords[i];
         }
     }
 }

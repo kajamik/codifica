@@ -9,11 +9,12 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title><xsl:value-of select="//tei:title[@xml:lang='fr']"/></title>
+                <title><xsl:value-of select="//tei:title[@xml:lang='it']"/></title>
 
                 <link rel="stylesheet" type="text/css" href="./src/css/doc.css"/>
 
                 <script src="src/js/app.js"></script>
+                <script src="src/js/imageResize.js"></script>
             </head>
             <body>
                 <div class="manuscript">
@@ -41,7 +42,43 @@
         </html>
     </xsl:template>
 
-    <!-- Header, file description -->
+    <!-- Header, file description, ... -->
+
+    <xsl:template match="tei:fileDesc">
+        <h3>File Description</h3>
+        <xsl:apply-templates/>
+    </xsl:template>
+
+    <xsl:template match="tei:titleStmt">
+        <xsl:element name="div">
+            Titolo: <xsl:value-of select="current()/tei:title[@xml:lang='fr']"/>
+        </xsl:element>
+        <xsl:apply-templates select="tei:respStmt"/>
+    </xsl:template>
+  
+    <xsl:template match="tei:respStmt">
+        <xsl:element name="div">
+            Titolo originale: <xsl:value-of select="parent::node()/tei:title[@xml:lang='fr']"/>
+        </xsl:element>
+        <xsl:element name="div">
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:editionStmt">
+        <xsl:apply-templates/>
+    </xsl:template>
+
+    <xsl:template match="tei:edition">
+        <xsl:element name="div">
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:publicationStmt">
+        <xsl:apply-templates/>
+    </xsl:template>
+
     <!-- Image Maps -->
 
     <xsl:template match="tei:facsimile">
@@ -136,7 +173,7 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="tei:term[@ref!='']|tei:name[@ref!='']">
+    <xsl:template match="tei:*[@ref!='']">
         <xsl:element name="a">
             <xsl:attribute name="href">
                 <xsl:value-of select="@ref"/>
@@ -146,13 +183,14 @@
     </xsl:template>
 
     <xsl:template match="tei:lb">
-        <xsl:element name="br">
-            <xsl:attribute name="id"><xsl:value-of select="@facs"/></xsl:attribute>
+        <xsl:element name="br"/>
+        <xsl:element name="span">
+            <xsl:attribute name="id">
+                <xsl:value-of select="@facs" />
+            </xsl:attribute>
+            <xsl:value-of select="concat('[', @n, ']')"/>
         </xsl:element>
-        <xsl:value-of select="concat('[', @n, ']')"/>
     </xsl:template>
-
-    <!-- Translation -->
 
     <xsl:template match="tei:div[@type='translation']">
         <xsl:element name="div">
@@ -179,11 +217,14 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="tei:gloss | tei:note | tei:persName">
+    <xsl:template match="tei:gloss | tei:note | tei:persName | tei:orgName">
         <xsl:element name="li">
             <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
-            <xsl:element name="strong">
-                <xsl:value-of select="//tei:term[@ref=concat('#', current()/@xml:id)]|//tei:name[@ref=concat('#', current()/@xml:id)]"/>:
+            <xsl:element name="span">
+                <xsl:attribute name="class">text-capitalize</xsl:attribute>
+                <xsl:element name="strong">
+                    <xsl:value-of select="//tei:term[@ref=concat('#', current()/@xml:id)]|//tei:name[@ref=concat('#', current()/@xml:id)]|//tei:author[@ref=concat('#', current()/@xml:id)]|//tei:orgName[@ref=concat('#', current()/@xml:id)]"/>:
+                </xsl:element>
             </xsl:element>
             <xsl:value-of select="current()"/>
         </xsl:element>
@@ -194,6 +235,13 @@
     <xsl:template match="tei:hi">
         <xsl:element name="strong">
             <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:date">
+        <xsl:element name="span">
+            <xsl:attribute name="class">date</xsl:attribute>
+            <xsl:value-of select="current()|current()[@when]"/>
         </xsl:element>
     </xsl:template>
 
