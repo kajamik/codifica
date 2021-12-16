@@ -205,11 +205,27 @@
 
     <xsl:template match="tei:list">
         <xsl:element name="h2">
-            <xsl:value-of select="@type"/>
+            Glossario
         </xsl:element>
 
         <xsl:element name="ol">
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="//tei:gloss"/>
+        </xsl:element>
+
+        <xsl:element name="h2">
+            Persone
+        </xsl:element>
+
+        <xsl:element name="ol">
+            <xsl:apply-templates select="//tei:persName"/>
+        </xsl:element>
+
+        <xsl:element name="h2">
+            Istituzioni
+        </xsl:element>
+
+        <xsl:element name="ol">
+            <xsl:apply-templates select="//tei:orgName"/>
         </xsl:element>
     </xsl:template>
 
@@ -217,16 +233,45 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="tei:gloss | tei:note | tei:persName | tei:orgName">
+    <xsl:template match="tei:gloss | tei:note">
         <xsl:element name="li">
             <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
             <xsl:element name="span">
-                <xsl:attribute name="class">text-capitalize</xsl:attribute>
                 <xsl:element name="strong">
-                    <xsl:value-of select="//tei:term[@ref=concat('#', current()/@xml:id)]|//tei:name[@ref=concat('#', current()/@xml:id)]|//tei:author[@ref=concat('#', current()/@xml:id)]|//tei:orgName[@ref=concat('#', current()/@xml:id)]"/>:
+                    <xsl:value-of select="//tei:term[@target=current()/@target]"/>:
                 </xsl:element>
             </xsl:element>
+            <xsl:element name="i">
+                (<xsl:value-of select="//tei:term[@xml:id=substring(current()/@target, 2)]"/> in fr.)
+            </xsl:element>
             <xsl:value-of select="current()"/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:persName">
+        <xsl:element name="li">
+            <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
+            <xsl:element name="span">
+                <xsl:element name="strong">
+                    <xsl:value-of select="concat(current()/tei:forename, ' ', current()/tei:surname)"/>:
+                </xsl:element>
+                <xsl:if test="parent::node()/tei:birth">
+                    <xsl:apply-templates select="parent::node()/tei:birth"/> - 
+                    <xsl:apply-templates select="parent::node()/tei:death"/>
+                </xsl:if>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="tei:birth">
+        <xsl:element name="span">
+            <xsl:value-of select="current()/tei:placeName"/>, <xsl:value-of select="current()/tei:country"/> il <xsl:value-of select="current()/tei:date"/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:death">
+        <xsl:element name="span">
+            <xsl:value-of select="current()/tei:placeName"/>, <xsl:value-of select="current()/tei:country"/> il <xsl:value-of select="current()/tei:date"/>
         </xsl:element>
     </xsl:template>
 

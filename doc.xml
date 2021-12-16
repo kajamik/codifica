@@ -14,7 +14,7 @@
                 <title xml:lang="it">Le prime tre conferenze all'Università</title>
                 <respStmt>
                     <resp>Traduzione a cura di</resp>
-                    <name ref="#EF">Emanuele Fadda</name>
+                    <name ref="#ef">Emanuele Fadda</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -24,11 +24,11 @@
                 </edition>
                 <respStmt>
                     <resp>Project coordinated by</resp>
-                    <name ref="#AMG">Angelo Mario del Grosso</name>
+                    <name ref="#amg">Angelo Mario del Grosso</name>
                 </respStmt>
                 <respStmt>
                     <resp>Encoded by</resp>
-                    <name ref="#PPC">Pietro Paolo Carpentras</name>
+                    <name ref="#ppc">Pietro Paolo Carpentras</name>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
@@ -40,12 +40,12 @@
                 <msDesc>
                     <msIdentifier>
                         <settlement>Genève</settlement>
-                        <repository ref="#BDG">Bibliothèque de Genève</repository>
+                        <repository ref="#bdg">Bibliothèque de Genève</repository>
                         <idno>Ms. fr. 3951/1</idno>
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <author ref="#FDS">Ferdinand de Saussure</author>
+                            <author ref="#fds">Ferdinand de Saussure</author>
                             <title>Trois premières conférences à l'Université (cours d'ouverture, novembre 1891)</title>
                             <docDate>Novembre 1891</docDate>
                         </msItem>
@@ -171,31 +171,31 @@
             <div type="page" n="12">
                 <ab type="paragraph" n="ab_1" xml:id="ms_fr_03951_01_1_p012_ab1" facs="#ms_fr_03951_01_1_p012">
                     <lb n="1" facs="ms_fr_03951_01_1_p012_line_1" />
-                    du russe et du slave, comme M. <name ref="#BDC" type="anthroponym">N. Baudouin 
+                    du russe et du slave, comme M. <name ref="#bdc" type="anthroponym">N. Baudouin 
                     <lb n="2" facs="ms_fr_03951_01_1_p012_line_2" />
-                    de Courtenay</name> <subst><del>et</del><add>,</add></subst> M. <name ref="#MK" type="anthroponym">Kruszewski</name><subst><del><gap reason="illegible" unit="char"/></del><add>.</add></subst>
+                    de Courtenay</name> <subst><del>et</del><add>,</add></subst> M. <name ref="#mk" type="anthroponym">Kruszewski</name><subst><del><gap reason="illegible" unit="char"/></del><add>.</add></subst>
                 </ab>
                 <ab type="paragraph" n="ab_2" xml:id="ms_fr_03951_01_1_p012_ab2" facs="#ms_fr_03951_01_1_p012">
                     <lb n="3" facs="ms_fr_03951_01_1_p012_line_3" />
-                    Le <term ref="#PDV" type="terminology">point de vue</term> auquel nous sommes arrivés,
+                    Le <term ref="#pdv" type="terminology">point de vue</term> auquel nous sommes arrivés,
                     <lb n="4" facs="ms_fr_03951_01_1_p012_line_4" />
-                    Messieurs, et qui est simplement le <term ref="#PDV" type="terminology">point de vue</term>
+                    Messieurs, et qui est simplement le <term ref="#pdv" type="terminology">point de vue</term>
                     <lb n="5" facs="ms_fr_03951_01_1_p012_line_5" />
-                    <del><gap reason="illegible" unit="char"/></del> dont s’inspire <add place="above">sans exception</add> l’<term ref="#EDEL" type="terminology">étude des langues</term>, en toutes
+                    <del><gap reason="illegible" unit="char"/></del> dont s’inspire <add place="above">sans exception</add> l’<term ref="#edel" type="terminology">étude des langues</term>, en toutes
                     <lb n="6" facs="ms_fr_03951_01_1_p012_line_6" />
                     ses branches, fait voir très clairement qu’il n’y a
                     <lb n="7" facs="ms_fr_03951_01_1_p012_line_7" />
-                    pas de séparation entre l’<term ref="#EDL" type="terminology">étude du langage</term>
+                    pas de séparation entre l’<term ref="#edl" type="terminology">étude du langage</term>
                     <lb n="8" facs="ms_fr_03951_01_1_p012_line_8" />
-                    et l’<term ref="#EDEL" type="terminology">étude <del><gap reason="illegible" unit="char"/></del> des langues</term>, <del><gap reason="illegible" unit="char"/></del>
+                    et l’<term ref="#edl" type="terminology">étude <del><gap reason="illegible" unit="char"/></del> des langues</term>, <del><gap reason="illegible" unit="char"/></del>
                     <lb n="9" facs="ms_fr_03951_01_1_p012_line_9" />
-                    <subst><del>telle famille,</del> <add place="margin">ou l’étude de telle ou telle <term ref="#LNE" type="terminology">langue</term> ou <term ref="#FDL" type="terminology">famille de langues</term></add> </subst>mais que d’un autre côté chaque
+                    <subst><del>telle famille,</del> <add place="margin">ou l’étude de telle ou telle <term ref="#lne" type="terminology">langue</term> ou <term ref="#fdl" type="terminology">famille de langues</term></add> </subst>mais que d’un autre côté chaque
                     <lb n="10" facs="ms_fr_03951_01_1_p012_line_10" />
-                    <del><gap reason="illegible" extent="2" unit="char"/></del>division et subdivision de <term ref="#LNE" type="terminology">langue</term> représente un
+                    <del><gap reason="illegible" extent="2" unit="char"/></del>division et subdivision de <term ref="#lne" type="terminology">langue</term> représente un
                     <lb n="11" facs="ms_fr_03951_01_1_p012_line_11" />
                     document nouveau, et intéressant au même
                     <lb n="12" facs="ms_fr_03951_01_1_p012_line_12" />
-                    titre que tout autre, pour le fait universel du <term ref="#LNGE" type="terminology">lan
+                    titre que tout autre, pour le fait universel du <term ref="#lnge" type="terminology">lan
                     <lb n="13" facs="ms_fr_03951_01_1_p012_line_13" />
                     gage</term>.
                 </ab>
@@ -204,20 +204,20 @@
                     <lb n="14" facs="ms_fr_03951_01_1_p012_line_14" />
                     <del><gap reason="illegible" unit="char"/></del> le premier jour, et à <subst><del><gap reason="illegible"/></del><add place="above">bon droit</add></subst>, à donner
                     <lb n="15" facs="ms_fr_03951_01_1_p012_line_15" />
-                    une place à la <term ref="#SDL" type="terminology">science du langage</term>; elle l’a fait
+                    une place à la <term ref="#lnge" type="terminology">science du langage</term>; elle l’a fait
                     <lb n="16" facs="ms_fr_03951_01_1_p012_line_16" />
-                    en créant le <orgName ref="#CDL" type="education"><placeName>cours de Linguistique</placeName></orgName> <del><gap reason="illegible" unit="char"/></del>
+                    en créant le <orgName ref="#cdl" type="education"><placeName>cours de Linguistique</placeName></orgName> <del><gap reason="illegible" unit="char"/></del>
                     <lb n="17" facs="ms_fr_03951_01_1_p012_line_17" />
                     <del><gap reason="illegible" unit="char"/></del> et a résumé ainsi sous un nom
                     <lb n="18" facs="ms_fr_03951_01_1_p012_line_18" />
                     très juste l’ensemble des études relatives au
                     <lb n="19" facs="ms_fr_03951_01_1_p012_line_19" />
-                    <term ref="#PRH" type="terminology">parler humain</term>.
+                    <term ref="#lnge" type="terminology">parler humain</term>.
                 </ab>
                 <ab type="paragraph" n="ab_4" xml:id="ms_fr_03951_01_1_p012_ab4" facs="#ms_fr_03951_01_1_p012">
                     Il est presque inutile de dire
                     <lb n="20" facs="ms_fr_03951_01_1_p012_line_20" />
-                    que cet enseignement, <term ref="#DQA" type="event">donné depuis quinze ans</term>, avec
+                    que cet enseignement, <term ref="#dqa" type="event">donné depuis quinze ans</term>, avec
                     <lb n="21" facs="ms_fr_03951_01_1_p012_line_21" />
                     une érudition, une expérience <del rend="overtyped"><gap reason="illegible" unit="char"/></del><del rend="overstrike" type="primary"><gap reason="illegible" unit="char"/></del>
                     <lb n="22" facs="ms_fr_03951_01_1_p012_line_22" />
@@ -229,16 +229,16 @@
                     <lb n="25" facs="ms_fr_03951_01_1_p012_line_25" />
                     <subst><del><gap reason="illegible"/></del><add>rien</add></subst> eu dans son programme <subst><del><gap reason="illegible" unit="char"/></del><add>qui pût exclure</add></subst> tel corps d’études
                     <lb n="26" facs="ms_fr_03951_01_1_p012_line_26" />
-                    <damage><supplied reason="illegible">particulier</supplied></damage> comme celui qui se rapporte aux <damage><supplied reason="illegible"><term ref="LNE">langues</term></supplied></damage>
+                    <damage><supplied reason="illegible">particulier</supplied></damage> comme celui qui se rapporte aux <damage><supplied reason="illegible"><term ref="#lne">langues</term></supplied></damage>
                 </ab>
             </div>
             <pb n="13" facs="ms_fr_03951_01_1_p013"/>
             <div type="page" n="13">
                 <ab type="paragraph" n="ab_4" xml:id="ms_fr_03951_01_1_p012_ab5" facs="#ms_fr_03951_01_1_p012">
                     <lb n="1" facs="ms_fr_03951_01_1_p013_line_1" />
-                    romanes, sou aux <term ref="#LNEG" type="terminology">langues germaniques</term>, ou aux
+                    romanes, sou aux <term ref="#lneg" type="terminology">langues germaniques</term>, ou aux
                     <lb n="2" facs="ms_fr_03951_01_1_p013_line_2" />
-                    <term ref="#LNEI" type="terminology">langues indo-européennes</term>, ou aux <term ref="#LNES" type="terminology">langues sémitiques</term>, etc.
+                    <term ref="#lnei" type="terminology">langues indo-européennes</term>, ou aux <term ref="#lnes" type="terminology">langues sémitiques</term>, etc.
                 </ab>
                 <ab type="paragraph" n="ab_5" xml:id="ms_fr_03951_01_1_p013_ab1" facs="#ms_fr_03951_01_1_p013">
                     <lb n="3" facs="ms_fr_03951_01_1_p013_line_3" />
@@ -250,11 +250,11 @@
                     <lb n="6" facs="ms_fr_03951_01_1_p013_line_6" />
                     puisse apporter, c’est que le nouveau <orgName ref="#CDLI" type="education"><placeName>cours de
                     <lb n="7" facs="ms_fr_03951_01_1_p013_line_7" />
-                    langues indo-européennes</placeName></orgName> créé par le <orgName ref="#DDIP" type="education"><placeName>Département
+                    langues indo-européennes</placeName></orgName> créé par le <orgName ref="#ddip" type="education"><placeName>Département
                     <lb n="8" facs="ms_fr_03951_01_1_p013_line_8" />
                     de l’Instruction Publique</placeName></orgName> l’a été en pleine conformité
                     <lb n="9" facs="ms_fr_03951_01_1_p013_line_9" />
-                    de vues avec <roleName ref="#TDCDL" type="education">l’éminent titulaire de
+                    de vues avec <roleName ref="#tdcdl" type="education">l’éminent titulaire de
                     <lb n="10" facs="ms_fr_03951_01_1_p013_line_10" />
                     la chaire de linguistique.</roleName>
                 </ab>
@@ -264,13 +264,13 @@
                     <lb n="12" facs="ms_fr_03951_01_1_p013_line_12" />
                     <del>spécialités vouées à</del> spécialités linguistiques
                     <lb n="13" facs="ms_fr_03951_01_1_p013_line_13" />
-                    vouées à l’étude <subst><del><gap reason="illegible" unit="char"/></del><add place="above">d’un certain</add></subst> <term ref="#GDL" type="terminology">groupe de langues</term>,
+                    vouées à l’étude <subst><del><gap reason="illegible" unit="char"/></del><add place="above">d’un certain</add></subst> <term ref="#fdl" type="terminology">groupe de langues</term>,
                     <lb n="14" facs="ms_fr_03951_01_1_p013_line_14" />
                     plus aussi l’ensemble de ces
                     <lb n="15" facs="ms_fr_03951_01_1_p013_line_15" />
                     études prendront de consistance par leur appui mutuel, et plus on
                     <lb n="16" facs="ms_fr_03951_01_1_p013_line_16" />
-                    apercevra <term ref="#TTG" type="terminology">les traits généraux</term> de la discipline,
+                    apercevra <term ref="#ttg" type="terminology">les traits généraux</term> de la discipline,
                     <lb n="17" facs="ms_fr_03951_01_1_p013_line_17" />
                     qui sont comme brisés et morcelés là où cessent
                     <lb n="18" facs="ms_fr_03951_01_1_p013_line_18" />
@@ -280,7 +280,7 @@
                 </ab>
                 <ab type="paragraph" n="ab_7" xml:id="ms_fr_03951_01_1_p013_ab3" facs="#ms_fr_03951_01_1_p013">
                     <lb n="20" facs="ms_fr_03951_01_1_p013_line_20" />
-                    <del><gap reason="illegible" unit="char"/></del> Comme <term ref="#LGSTE" type="terminology">linguiste</term>, on
+                    <del><gap reason="illegible" unit="char"/></del> Comme <term ref="#lgste" type="terminology">linguiste</term>, on
                     <lb n="21" facs="ms_fr_03951_01_1_p013_line_21" />
                     sera certainement porté à souhaiter le développe
                     <lb n="22" facs="ms_fr_03951_01_1_p013_line_22" />
@@ -359,133 +359,185 @@
         <back>
             <div type="list">
                 <list type="glossary">
+                    <label>
+                        <term xml:lang="fr" xml:id="pdv">Point de vue</term>
+                        <term xml:lang="it" target="#pdv">Punto di vista</term>
+                    </label>
                     <item>
-                        <gloss xml:id="PDV">
+                        <gloss target="#pdv">
                             Point de Vue
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="edl">Étude du langage</term>
+                        <term xml:lang="it" target="#edl">Studio della lingua</term>
+                    </label>
                     <item>
-                        <gloss xml:id="EDL">
+                        <gloss target="#edl">
                             La linguistica è lo studio scientifico del <hi>linguaggio</hi> verbale umano e delle sue strutture.
                             Ha come scopo comprendere e definire le caratteristiche del linguaggio verbale umano (la facoltà mentale dell'uomo di comunicare attraverso una lingua) 
                             attraverso l'analisi delle lingue del mondo
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="lne">Langue</term>
+                        <term xml:lang="it" target="#lne">Lingua</term>
+                    </label>
                     <item>
-                        <gloss xml:id="EDEL">
-                            Vedi <hi>étude du langage</hi>
-                        </gloss>
-                    </item>
-                    <item>
-                        <gloss xml:id="SDL">
-                            Vedi <hi>étude du langage</hi>
-                        </gloss>
-                    </item>
-                    <item>
-                        <gloss xml:id="LNE">
+                        <gloss target="#lne">
                             La <hi>lingua</hi> è il sistema o forma storicamente determinata attraverso il quale
                             gli appartenenti a una comunità si esprimono e comunicano tra loro attraverso l'uso di un determinato linguaggio
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="lnge">Langage</term>
+                        <term xml:lang="it" target="#lnge">Linguaggio</term>
+                    </label>
                     <item>
-                        <gloss xml:id="LNGE" source="https://it.wikipedia.org/wiki/Linguaggio">
+                        <gloss target="#lnge" source="https://it.wikipedia.org/wiki/Linguaggio">
                             Il linguaggio è una forma di comunicazione tra due o più individui attraverso un complesso determinato di suoni, gesti, simboli e movimenti dotati di significato, che definiscono una lingua comune ad uno specifico ambiente di interazione.
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="fdl">Famille de langue</term>
+                        <term xml:lang="it" target="#fdl">Famiglia linguistica</term>
+                    </label>
                     <item>
-                        <gloss xml:id="FDL" source="https://it.wikipedia.org/wiki/Famiglia_linguistica">
+                        <gloss target="#fdl" source="https://it.wikipedia.org/wiki/Famiglia_linguistica">
                             Una famiglia un'unità <hi>filogenetica</hi> ossia i cui membri sono considerati come derivanti da un antenato comune.
                             L'antenato è molto raramente una lingua conosciuta, poiché molte lingue hanno una storia registrata molto breve.
                             Comunque è possibile ricostruire molte delle caratteristiche dell'antenato comune a varie lingue e dialetti usando il metodo comparativo, una procedura di ricostruzione sviluppata dai linguisti a partire dal XIX secolo. Grazie a tale metodo è possibile dimostrare l'appartenenza a una determinata famiglia
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="lneg">Langues Germaniques</term>
+                        <term xml:lang="it" target="#lneg">Lingue germaniche</term>
+                    </label>
                     <item>
-                        <gloss xml:id="PRH">
-                        </gloss>
-                    </item>
-                    <item>
-                        <gloss xml:id="LNEG">
+                        <gloss target="#lneg">
                             Le <hi>lingue germaniche</hi> sono un gruppo linguistico appartenente alla famiglia delle lingue indoeuropee.
                             Sono originate dalla lingua proto-germanica, parlata dai popoli germanici che con diverse migrazioni erano arrivati a stanziarsi dal nord Europa ai confini dell'Impero romano, fino agli anni della sua caduta. 
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="lnei">Langues indo-européennes</term>
+                        <term xml:lang="it" target="#lnei">Lingue indoeuropee</term>
+                    </label>
                     <item>
-                        <gloss xml:id="LNEI">
+                        <gloss target="#lnei">
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="lnes">Langues sémitiques</term>
+                        <term xml:lang="it" target="#lnes">Lingue semitiche</term>
+                    </label>
                     <item>
-                        <gloss xml:id="LNES">
+                        <gloss target="#lnes">
                             Le lingue semitiche sono un ramo delle lingue afro-asiatiche parlate in Africa e Asia.
                             Le lingue semitiche sono note per la loro morfologia nonconcatenativa, cioè le radici delle parole non sono esse stesse sillabe o parole, ma insiemi isolati di consonanti, di solito tre, che formano una cosiddetta radice trilittera.
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="ttg">Les traits généraux</term>
+                        <term xml:lang="it" target="#ttg">Caratteristiche generali</term>
+                    </label>
                     <item>
-                        <gloss xml:id="GDL">
-                            Vedi famille de language
+                        <gloss target="#ttg">
                         </gloss>
                     </item>
+                    <label>
+                        <term xml:lang="fr" xml:id="lgste">Linguiste</term>
+                        <term xml:lang="it" target="#lgste">Linguista</term>
+                    </label>
                     <item>
-                        <gloss xml:id="TTG">
-                        </gloss>
-                    </item>
-                    <item>
-                        <gloss xml:id="LGSTE">
+                        <gloss target="#lgste">
                             Un linguista è una persona specializzata in linguistica
                         </gloss>
                     </item>
-                    <item>
-                    </item>
                 </list>
-                <list type="person">
-                    <item>
-                        <persName xml:id="FDS">
+                <listPerson>
+                    <person>
+                        <persName xml:id="fds">
                             <forename>Ferdinand</forename>
                             <surname>de Saussure</surname>
                         </persName>
-                    </item>
-                    <item>
-                        <persName xml:id="BDC">
+                        <sex>M</sex>
+                        <birth>
+                            <placeName>Ginevra</placeName>
+                            <country>Svizzera</country>
+                            <date>26 novembre 1857</date>
+                        </birth>
+                        <death>
+                            <placeName>Vufflens-le-Château</placeName>
+                            <country>Svizzera</country>
+                            <date>22 febbraio 1913</date>
+                        </death>
+                    </person>
+                    <person>
+                        <persName xml:id="bdc">
                             <forename>Jan Niecisław Baudouin</forename>
                             <surname>de Courtenay</surname>
                         </persName>
-                    </item>
-                    <item>
-                        <persName xml:id="MK">
+                        <sex>M</sex>
+                        <birth>
+                            <placeName>Radzymin</placeName>
+                            <country>Polonia</country>
+                            <date>13 marzo 1845</date>
+                        </birth>
+                        <death>
+                            <placeName>Varsavia</placeName>
+                            <country>Polonia</country>
+                            <date>3 novembre 1929</date>
+                        </death>
+                    </person>
+                    <person>
+                        <persName xml:id="mk">
                             <forename>Mikolaj Habdank</forename>
                             <surname>Kruszewski</surname> 
                         </persName>
-                    </item>
-                    <item>
-                        <persName xml:id="EF">
+                        <sex>M</sex>
+                        <birth>
+                            <placeName>Luc'k</placeName>
+                            <country>Polonia</country>
+                            <date>1851</date>
+                        </birth>
+                        <death>
+                            <placeName>Kazan'</placeName>
+                            <country>Russia</country>
+                            <date>12 novembre 1887</date>
+                        </death>
+                    </person>
+                    <person>
+                        <persName xml:id="ef">
                             <forename>Emanuele</forename>
                             <surname>Fadda</surname> 
                         </persName>
-                    </item>
-                    <item>
-                        <persName xml:id="AMG">
+                    </person>
+                    <person>
+                        <persName xml:id="amg">
                             <forename>Angelo Mario</forename>
                             <surname>del Grosso</surname> 
                         </persName>
-                    </item>
-                    <item>
-                        <persName xml:id="PPC">
+                    </person>
+                    <person>
+                        <persName xml:id="ppc">
                             <forename>Pietro Paolo</forename>
                             <surname>Carpentras</surname> 
                         </persName>
-                    </item>
-                </list>
-                <list type="istitution">
-                    <item>
-                        <orgName xml:id="UDG">
+                    </person>
+                </listPerson>
+                <listOrg>
+                    <org>
+                        <orgName xml:id="udg">
                             <placeName>Università di Ginevra</placeName>
                         </orgName>
-                    </item>
-                    <item>
-                        <orgName xml:id="CDL">
+                    </org>
+                    <org>
+                        <orgName xml:id="cdl">
                             <placeName>Corso di Linguistica</placeName>
                         </orgName>
-                    </item>
-                </list>
+                    </org>
+                </listOrg>
             </div>
         </back>
     </text>
